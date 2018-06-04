@@ -4,6 +4,14 @@ namespace calculadora
 {
     class Operaciones
     {
+        //cambios lunes 4 junio{
+        double memoria=0;
+        double Sumar(double suma1 ,double suma2)
+        {
+        double Sumar(double sumando)
+        { 
+        //cambios lunes 4 junio}
+        
         public double Suma(double valor1, double valor2)
         {
             return valor1 + valor2;
