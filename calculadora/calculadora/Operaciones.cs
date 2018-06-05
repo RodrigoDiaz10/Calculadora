@@ -4,29 +4,26 @@ namespace calculadora
 {
     class Operaciones
     {
-        //cambios lunes 4 junio{
-        double memoria=0;
-        double Sumar(double suma1 ,double suma2)
+        public double Sumar(double sumando1, double sumando2)
         {
-        double Sumar(double sumando)
-        { 
-        //cambios lunes 4 junio}
-        
-        public double Suma(double valor1, double valor2)
-        {
-            return valor1 + valor2;
+            return sumando1 + sumando2;
         }
-         public double Resta(double valor1, double valor2)
+         public double Restar(double minuendo, double sustraendo)
         {
-            return valor1 - valor2;
+            return minuendo - sustraendo;
         }
-         public double Multiplicacion(double valor1, double valor2)
+         public double Multiplicar(double multiplicando, double multiplicador)
         {
-            return valor1 * valor2;
+            return multiplicando * multiplicador;
         }
-         public double Diviison(double valor1, double valor2)
+         public double Dividir(double dividendo, double divisor)
         {
-            return valor1 / valor2;
+            return dividendo / divisor;
         }
+        public double Raiz(double radicando)
+        {
+            return Math.Sqrt(radicando);
+        }
+
     }
 }
