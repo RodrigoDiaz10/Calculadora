@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace calculadora
 {
@@ -22,25 +22,28 @@ namespace calculadora
                 Console.WriteLine("Ingrese el segundo numero  :\n");
                 numero2=Convert.ToDouble(Console.ReadLine());
 
-                Operaciones op=new Operaciones(); 
+                Operaciones calculator=new Operaciones(); 
 
                 switch (operacion)
                 {
                      case 1: 
-                            Console.WriteLine("la suma de los numeros es:  \n"+op.Suma(numero1,numero2));
+                            Console.WriteLine("la suma de los numeros es:  \n"+calculator.Sumar(numero1,numero2));
                      break;
                      case 2: 
-                            Console.WriteLine("la resta de los numeros es:  \n"+op.Resta(numero1,numero2));
+                            Console.WriteLine("la resta de los numeros es:  \n"+calculator.Restar(numero1,numero2));
                      break;
                      case 3: 
-                            Console.WriteLine("la multiplicacion de los numeros es:  \n"+op.Multiplicacion(numero1,numero2));
+                            Console.WriteLine("la multiplicacion de los numeros es:  \n"+calculator.Multiplicar(numero1,numero2));
                      break;
                      case 4: 
-                            Console.WriteLine("la division de los numeros es:  \n"+op.Diviison(numero1,numero2));
+                            Console.WriteLine("la division de los numeros es:  \n"+calculator.Dividir(numero1,numero2));
+                     break;
+                     case 5: 
+                            Console.WriteLine("la raiz del numero es:  \n"+calculator.Raiz(numero1));
                      break;
 
                      default: 
-                            Console.WriteLine("la operacion no existe\n"+op.Suma(numero1,numero2));
+                            Console.WriteLine("la operacion no existe\n"); 
                      break;        
                 } 
 
